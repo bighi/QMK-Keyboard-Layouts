@@ -1,0 +1,24 @@
+/* combos.def - X-macro list of combos
+ * Format: X(NAME, OUTPUT, KEY1, KEY2, KEY3...)
+ * Keep this file simple: edit or add lines here and the C expansions
+ * in shared.c will generate the PROGMEM arrays, enum, and combo table.
+ */
+
+ // ESC
+X(FD, KC_ESC, KC_F, KC_D)
+
+// ENTER
+X(JK, KC_ENT, KC_J, KC_K)
+
+ // Minus and plus
+X(RT, KC_PMNS, KC_R, KC_T)
+X(YU, KC_PPLS, KC_Y, KC_U)
+
+// Cut, copy, paste
+// X(ZX, LGUI(KC_C), KC_Z, KC_X)
+// X(XC, LGUI(KC_X), KC_X, KC_C)
+// X(CV, LGUI(KC_V), KC_C, KC_V)
+
+// Close and open tabs
+X(WER, LGUI(KC_W), KC_W, KC_E, KC_R)
+X(UIO, SGUI(KC_T), KC_I, KC_U, KC_O)
